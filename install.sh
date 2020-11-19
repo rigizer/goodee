@@ -53,6 +53,7 @@ echo '### MARIADB ROOT PERMISSION SET ###'
 sudo mysql -uroot -pjava1004 -e "grant all privileges on *.* to 'root'@'%'; flush privileges;"
 
 # MariaDB 서버시간을 한국 표준시(UTC+9)로 변경
+echo '### DATABASE SERVER TIME CHANGE ###'
 sudo sed -i '$s/$/\n\n[mysqld]\ndefault-time-zone='+9:00'/g' /etc/mysql/mariadb.conf.d/50-server.cnf
 
 # MariaDB 서비스 재시작
