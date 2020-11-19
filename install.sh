@@ -60,4 +60,4 @@ sudo systemctl restart mariadb
 clear
 cd
 sudo rm -rf ./goodee
-echo '### 설치가 완료되었습니다 ###'
+echo '### INSTALL COMPLETE ###'
