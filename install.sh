@@ -34,7 +34,7 @@ sudo chmod -R 777 /var/lib/tomcat9/webapps
 
 # Tomcat9 포트 변경 (8080 -> 80)
 echo '### TOMCAT9 PORT CHANGE (80) ###'
-sudo sed -i 's/port="8080"/port="80"/g' /usr/share/tomcat9/etc/server.xml
+sudo sed -i 's/"8080"/"80"/g' /etc/tomcat9/server.xml 
 
 # Tomcat9 서비스 재시작
 echo '### TOMCAT9 RESTART ###'
