@@ -58,7 +58,6 @@ sudo systemctl restart mariadb
 
 # 설치 완료 안내 문구
 clear
-echo '### 설치가 완료되었습니다 ###'
 cd
-sudo rm -rf ./README.md
-sudo rm -rf ./install.sh
+sudo rm -rf ./goodee
+echo '### 설치가 완료되었습니다 ###'
