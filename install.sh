@@ -60,4 +60,5 @@ sudo systemctl restart mariadb
 clear
 echo '### 설치가 완료되었습니다 ###'
 cd
+sudo rm -rf ./README.md
 sudo rm -rf ./install.sh
