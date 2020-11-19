@@ -50,7 +50,7 @@ sudo mysql -uroot -e "set password for 'root'@'%' = password('java1004'); flush 
 
 # MariaDB root계정 외부접속 설정
 echo '### MARIADB ROOT PERMISSION SET ###'
-sudo mysql -uroot -pjava1004 -e "grant all privileges on *.* to 'root'@'%'; flush privileges;"
+sudo mysql -uroot -pjava1004 -e "grant all privileges on *.* to 'root'@'%' identified by 'java1004'; flush privileges;"
 
 # MariaDB 서버시간을 한국 표준시(UTC+9)로 변경
 echo '### DATABASE SERVER TIME CHANGE ###'
